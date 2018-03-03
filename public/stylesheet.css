@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+}
+
+#welcome h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+}
+.top-container {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.top-container p {
+	text-decoration: none;
+	font-family: 'Fontdiner Swanky', cursive;
+	cursor: pointer;
+	color: black;
+}
+
+.bottom-container {
+	height: 80vh;
+	display: flex;
+	/*justify-content: space-around;*/
+	padding-left: 20px;
+
+}
+
+.bottom-container img {
+	width: 120vh;
+	height: 70vh;
+	object-fit: cover;
+
+}
+.bottom-container h3 {
+	font-family: 'Cinzel', serif;
+}
+
+.reg-form {
+	width: 70vh;
+	height: 70vh;
+	padding-top: 65px;
+	padding-right: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+/*.reg-form h2 {
+	padding-right: 200px;
+	align-self: center;
+}*/
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.input-container input {
+	width: 200px;
+	height: 25px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+.input-container button {
+	width: 200px;
+	height: 25px;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid;
+	border-bottom: 5px solid #F47404;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#header h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+	color: #444;
+}
+#header p {
+	font-family: 'Cinzel', serif;
+	text-decoration: none;
+	color: black;
+}
+
+.upload-container {
+	top: 25%;
+    left: 0;
+    right: 0;       
+    margin: auto;
+    width: 40%;
+    position: absolute;
+    padding: 15px 20px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    z-index: 1000;
+    border-radius: 4px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    animation: fade .6s;
+
+}
+
+/*.close -button { рабочий вариант кнопки закрытия вместе с .upload-container для загрузки
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background-color: #444;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+ 
+}*/
+
+.pic-logout-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5px;
+}
+
+.profile-pic {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: 3px solid #48639C;
+
+}
+
+.pic-logout-container a {
+	text-decoration: none;
+	font-family: 'Fontdiner Swanky', cursive;
+	color: #444;
+}
+.profile-container {
+	display: flex;
+	padding-left: 20px;
+	height: 79vh;
+	background-image: url('./abs.jpg');
+	background-size: cover;
+}
+
+.pic-name-container {
+	padding-top: 20px;
+}
+.pic-name-container img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: 3px solid #48639C;	
+}
+/*.pic-name-container h3 {
+	font-family: 'Source Serif Pro', serif;
+}*/
+.bio-container {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.bio-container p {
+	font-family: 'Fontdiner Swanky', cursive;
+	cursor: pointer;
+}
+#bio-text {
+	font-family: 'Cinzel', serif;
+	font-size: 25px;
+}
+.bio-container input {
+	width: 350px;
+	height: 150px;
+	border-radius: 5px;
+	border: 3px solid #48639C;
+}
+.other-user-profile img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: 3px solid #48639C;	
+} 
+#bio-text-user {
+	font-family: 'Cinzel', serif;
+}
+.other-user-profile p {
+	font-family: 'Fontdiner Swanky', cursive;
+	cursor: pointer;
+}
+
+.friend-list-container p {
+	font-family: 'Fontdiner Swanky', cursive;
+	cursor: pointer;
+}
+.pending-friends img {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	border: 3px solid #48639C;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.current-friends img {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	border: 3px solid #48639C;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.current-friends-container, .pending-friends-container {
+	display: flex;
+}
+.online-users-container, .friend-list-container, .big-chat-container, .other-user-profile {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	height: 79vh;
+	background-image: url('./abs.jpg');
+	background-size: cover;
+}
+.online-user {
+	padding-bottom: 10px;
+}
+
+.online-user img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: 3px solid #48639C;
+}
+
+.messageList {
+	width: 500px;
+	height: 300px;
+	border-style: solid;
+	border-color: black;
+	overflow: auto;
+}
+.messageList img {
+	width: 78px;
+	height: 78px;
+	object-fit: cover;
+	border: 3px solid #48639C;
+	margin-right: 15px;
+}
+.single-mess {
+	display: flex;
+}
+.big-chat-container textarea {
+	width: 500px;
+}
